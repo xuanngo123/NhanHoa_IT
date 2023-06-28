@@ -18,7 +18,7 @@
 **2.Cấu trúc IPv6:**
 
 Trong IPV6, thay vì sử dụng một địa chỉ nguồn và đích là 32bit để cung cấp khoảng 4.294.967.296 (232) địa chỉ  như IPv4, địa chỉ IPv6 có chiều dài 128bit, do đó độ dài của IP sẽ lớn hơn,tương đương với việc số địa chỉ được tạo ra từ bội số 128bit sẽ lớn hơn rất nhiều ,có thể lên đến 3.4x1038 địa chỉ.Ngoài ra,có một vài sự khác nhau trong cách biểu diễn địa chỉ của IPv6, một địa chỉ IPv6 thường được viết thành 8 nhóm, mỗi nhóm gồm có 4 số hex và mỗi nhóm được tách biệt với nhau bằng dấu “:”. Ví dụ sau thể hiện điều này 2001:0f68:0000:0000:0000:0000:1986:69af.
-![image](https://www.totolink.vn/public/uploads/img_article/cautrucipv6vacacloaidiachiipv6cautrucipv6.png)
+![ipv6](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/13340672-aebf-48f3-a861-22b211e50073)
 
 2. Lịch sử và mục đích sử dụng: 
 
