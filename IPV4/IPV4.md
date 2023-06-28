@@ -1,4 +1,10 @@
-﻿**1.IPV4 là gì?**
+Mục lục:
+1.IPV4 là gì?
+2.Cấu trúc
+3.tìm hiểu subnet và subnetmark
+4.chia mạng 
+5.ví dụ
+ **1.IPV4 là gì?**
 
 IPv4 là phiên bản IP thế hệ thứ 4, nó được sử dụng nhiều nhất hiện nay bên cạnh [IPv6](https://bkhost.vn/blog/ipv6/). Hai phiên bản IP này là yếu tố chủ chốt cho việc giao tiếp giữa các thiết bị trong mạng internet.
 
