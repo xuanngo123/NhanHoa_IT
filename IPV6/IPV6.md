@@ -44,18 +44,18 @@ Trong IPV6, thay vì sử dụng một địa chỉ nguồn và đích là 32bit
 **3.Địa chỉ Unicast:**
 
 Trong chế độ địa chỉ unicast, máy chủ được xác định duy nhất trong một phân đoạn mạng. Gói IPv6 chứa cả địa chỉ IP nguồn và đích. Giao diện máy chủ được trang bị một địa chỉ IP duy nhất trong phân khúc mạng đó. Khi bộ chuyển mạch mạng hoặc bộ định tuyến nhận được gói IP unicast thì nó được gửi đến một máy chủ duy nhất.
-
+![ipv6-1](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/0fe978ca-571a-415e-b5e4-19ac3c0cfbad)
 Địa chỉ unicast gồm có 4 loại khác nhau :
 
 - Global Unicast Address
 - Link-Local Address
 - Site-Local Address
-- Unique-Local 
-
+- Unique-Local Address
+![upv6-2](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/365ce897-d21f-4630-a42e-1291d4f032b7)
 **4.Địa chỉ Multicast**
 
 Chế độ Multicast IPv6 giống như của IPv4. Gói tin được gửi đến nhiều node với một địa chỉ multicast đặc biệt. Tất cả các node quan tâm đến thông tin phát multicast đó, trước tiên cần tham gia nhóm multicast .Toàn bộ các node tham gia nhóm đều sẽ nhận được gói phát multicast này và xử lý nó, trong khi các node khác không quan tâm đến gói phát multicast đó thì bỏ qua.
-
+![ipv6-4](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/5ce4cf89-6511-4169-8ffb-ab66e578d0b0)
 Địa chỉ multicast cũng có các phạm vi: global, site-local, link-local ngoài ra multicast còn có thêm 2 phạm vi mới đó là organization-local và node-local. Một node IPv6 có thể được gắn rất nhiều địa chỉ.
 
 - Organization-local: được sử dụng trong phạm vi một tổ chức với một số site.
@@ -64,6 +64,7 @@ Chế độ Multicast IPv6 giống như của IPv4. Gói tin được gửi đ�
 **5.Địa chỉ Anycast**
 
 IPv6 đã giới thiệu một loại địa chỉ mới, được gọi là địa chỉ Anycast.Trong chế độ địa chỉ này, nhiều Hosts được gán cùng một địa chỉ IP Anycast. Khi một node muốn liên lạc với một node được trang bị địa chỉ IP Anycast, nó sẽ gửi một tin nhắn Unicast.Tin nhắn này sẽ không được gửi đến tất cả các node trong nhóm giống như Multicast mà với sự trợ giúp của cơ chế định tuyến, thông điệp Unicast đó được gửi đến node gần nhất trong nhóm với người gửi(tính theo thủ tục định tuyến) .
+![ipv6-4 - Copy](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/f5d15a1f-6589-4bb1-b7b5-0437bd24b278)
 
 **6.Các địa chỉ IPv6 đặc biệt**
 
