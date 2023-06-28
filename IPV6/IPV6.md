@@ -13,6 +13,7 @@
 **1.IPV6:**
 
 Địa chỉ IPv6 (Internet protocol version 6) là thế hệ địa chỉ Internet phiên bản mới được thiết kế để thay thế cho phiên bản địa chỉ IPv4 trong hoạt động Internet. Địa chỉ IPv4 có chiều dài 32 bít, biểu diễn dưới dạng các cụm số thập phân phân cách bởi dấu chấm, ví dụ 203.119.9.0. IPv4 là phiên bản địa chỉ Internet đầu tiên, đồng hành với việc phát triển như vũ bão của hoạt động Internet trong hơn hai thập kỷ. Với 32 bit [chiều dài](https://vi.wikipedia.org/wiki/Chi%E1%BB%81u_d%C3%A0i "Chiều dài"), không gian IPv4 gồm khoảng 4 tỉ địa chỉ cho hoạt động mạng toàn cầu.
+![alt(https://www.totolink.vn/public/uploads/img_article/cautrucipv6vacacloaidiachiipv6cautrucipv6.png)
 
 **2.Cấu trúc IPv6:**
 
