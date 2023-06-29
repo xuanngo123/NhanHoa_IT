@@ -20,6 +20,7 @@ FTP sử dụng 2 cổng gồm:
 Hoạt động theo mô hình Server-Client.
 
 **2. Mô hình hoạt động**
+![fdfd](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/5919d475-cfa6-4bdb-a267-442a78350288)
 
 Như đã nói ở trên, FTP hoạt động theo mô hình Server-Client.
 
