@@ -30,10 +30,10 @@
 - Nhìn chung, Hệ thống tên miền cũng lưu trữ các loại thông tin khác, chẳng hạn như danh sách các máy chủ email mà chấp nhận thư điện tử cho một tên miền Internet. Bằng cách cung cấp cho một thế giới rộng lớn, phân phối từ khóa – cơ sở của dịch vụ đổi hướng, Hệ thống tên miền là một thành phần thiết yếu cho các chức năng của Internet. Các định dạng khác như các thẻ RFID, mã số UPC, kí tự Quốc tế trong địa chỉ email và tên máy chủ, và một loạt các định dạng khác có thể có khả năng sử dụng DNS.
 
 <a name="user-content-chuc-nang"></a>**2. Chức năng của DNS.**
-
 - Mỗi website có một tên (là tên miền hay đường dẫn URL: Uniform Resource Locator) và một địa chỉ IP. Địa chỉ IP gồm 4 nhóm số cách nhau bằng dấu chấm(IPv4). Khi mở một trình duyệt Web và nhập tên website, trình duyệt sẽ đến thẳng website mà không cần phải thông qua việc nhập địa chỉ IP của trang web. Quá trình "dịch" tên miền thành địa chỉ IP để cho trình duyệt hiểu và truy cập được vào website là công việc của một DNS server. Các DNS trợ giúp qua lại với nhau để dịch địa chỉ "IP" thành "tên" và ngược lại. Người sử dụng chỉ cần nhớ "tên", không cần phải nhớ địa chỉ IP (địa chỉ IP là những con số rất khó nhớ)
 
 <a name="user-content-nguyen-tac-lam-viecc"></a>**3. Nguyên tắc làm việc của DNS.**
+![dns-diagram](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/5de4aa92-ffca-4492-a9bd-ce58f4de0e2b)
 
 - Mỗi nhà cung cấp dịch vụ vận hành và duy trì DNS server riêng của mình, gồm các máy bên trong phần riêng của mỗi nhà cung cấp dịch vụ đó trong Internet. Tức là, nếu một trình duyệt tìm kiếm địa chỉ của một website thì DNS server phân giải tên website này phải là DNS server của chính tổ chức quản lý website đó chứ không phải là của một tổ chức (nhà cung cấp dịch vụ) nào khác.
 - INTERNIC (Internet Network Information Center) chịu trách nhiệm theo dõi các tên miền và các DNS server tương ứng. INTERNIC là một tổ chức được thành lập bởi NFS (National Science Foundation), AT&T và Network Solution, chịu trách nhiệm đăng ký các tên miền của Internet. INTERNIC chỉ có nhiệm vụ quản lý tất cả các DNS server trên Internet chứ không có nhiệm vụ phân giải tên cho từng địa chỉ.
@@ -47,7 +47,7 @@
 <a name="user-content-kien-truc"></a>**5. Kiến trúc DNS.**
 
 <a name="user-content-khong-gian-tien-mien"></a>**5.1. Không gian tên miền (Domain name space).**
-
+![domain-name-space](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/6eb837a9-ab26-4c07-b503-bb1d5f7d36f1
 - Không gian tên miền là một kiến trúc dạng cây (hình), có chứa nhiều nốt (node). Mỗi nốt trên cây sẽ có một nhãn và có không hoặc nhiều resource record (RR), chúng giữ thông tin liên quan tới tên miền. Nốt root không có nhãn.
 
 <a name="user-content-ten-mien"></a>**5.2. Tên miền (Domain name)**
@@ -63,12 +63,13 @@
 - Máy chủ tên miền chứa thông tin lưu trữ của Không gian tên miền. Hệ thống tên miền được vận hành bởi hệ thống dữ liệu phân tán, dạng client-server. Các nốt của hệ dữ liệu này là các máy chủ tên miền. Mỗi một tên miền sẽ có ít nhất một máy chủ DNS chứa thông tin của tên miền đó. Các thông tin của Máy chủ tên miền sẽ được lưu trữ trong các zone. Có hai dạng NS là là primary và secondary.
 
 <a name="user-content-phan-giai"></a>**5.5. Cách phân giải địa chỉ DNS.**
-
+![dns-resolve](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/70ae16b4-7716-42e3-b858-40e89d474532)
 - Phần client của DNS gọi là DNS resolver.
 - Truy vấn non-recursive: DNS resolver client truy vấn DNS server để tìm record của tên miền chưa trên server đó.
 - Truy vấn recursive
 - Truy vấn iterative
 - DNS query :
+![dns-request](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/51ac9685-c88a-4db2-a1be-7f9fb1932eaa)
 
 <a name="user-content-cau-truc-goi-tin"></a>**5.6. Cấu trúc gói tin DNS.**
 
