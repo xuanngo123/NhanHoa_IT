@@ -71,5 +71,6 @@ Cấu trúc của một HTTP Request:
 - Một dòng trống để đánh dấu sự kết thúc của các trường **Header**
 
 **1 số HTTP Request method thường dùng:**
+![b986dced-c499-4051-8efb-5ea5d9b93c02](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/7facf27d-8938-4da7-95db-7d6843eb97a2)
 
 
