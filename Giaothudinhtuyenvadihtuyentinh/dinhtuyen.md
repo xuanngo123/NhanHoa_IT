@@ -2,7 +2,7 @@
 - Phân loại định tuyến
 - Các giao thức định tuyến động căn bản
 - Thực hành định tuyến tĩnh
-
+![đg](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/c0046d73-9a5b-4c89-8456-dd4e56b7d561)
 ##1. Định tuyến là gì ?
 
 Trong ngành mạng máy tính, định tuyến (tiếng Anh: routing hay routeing) là quá trình chọn lựa các đường đi trên một mạng máy tính để gửi dữ liệu qua đó. Việc định tuyến được thực hiện cho nhiều loại mạng, trong đó có mạng điện thoại, liên mạng, Internet, mạng giao thông.
