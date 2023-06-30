@@ -13,31 +13,34 @@
 - Với nhân Linux, hệ thống file là phẳng. Nghĩa là - nó không là một cấu trúc phân cấp, phân biệt giữa các thư mục , tệp tin, hoặc các chương trình. Thay vào đó, kernel sử dụng khái niệm **inode** để đại diện cho từng file.
 - Mỗi inode chứa thông tin về một file bao gồm: số inode của nó (nhận dạng duy nhất trong hệ thống), các chủ sở hữu và nhóm liên kết với file, loại file (file thông thường, hay file link liên kết hay thư mục, ...), quyền truy cập file, thời gian tạo file, kích thước tệp tin và địa chỉ nơi mà file được lưu trữ.
 - Dùng câu lệnh ls -li để xem thông tin một inode:
+![687474703a2f2f696d6775722e636f6d2f354e49684d57312e6a7067](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/c6b38fae-9c0b-47a6-a6b0-764c6a3db18d)
 
 - Khi liệt kê các inode, dùng lệnh ls, khi đó thông tin các inode được liệt kê ra và phân biệt các kiểu của inode theo màu. Sau đây là một số cách phân biệt kiểu file qua màu:
+![687474703a2f2f696d6775722e636f6d2f354e49684d57312e6a7067](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/c6b38fae-9c0b-47a6-a6b0-764c6a3db18d)
 
 <a name="user-content-2"></a>**2. Cấu trúc thư mục trong Linux**
 
 Linux quản lý hệ thống trên một *"hệ thống tệp tin"* duy nhất, bắt đầu ở gốc là thư mục **root** (**/**) đây là thư mục ở cấp cao nhất. Cấu trúc cơ bản của hệ thống Linux như sau:
+![687474703a2f2f696d6775722e636f6d2f6b647135594f4a2e6a7067](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/4af7c7ae-9a3b-4af4-8108-c4fcd4a2ed45)
 
 Trong đó:
 
 - **/** : là thư mục root, nơi mở đầu logic cho hệ thống file của Linux. Mọi đường dẫn tuyệt đối của bất kì file nào đều bắt đầu từ **/**. Thư mục **/** chứa toàn bộ hệ điều hành. Chỉ có người dùng root mới có quyền truy cập và thay đổi trong thư mục này. (phân biệt giữa **/** và **/root**)
 - **/bin**: User binaries - thư mục lưu trữ các file nhị phân chương trình thực thi của người dùng như: pwd, cat, cp, ...
-
+![687474703a2f2f696d6775722e636f6d2f4c6a687a5466722e6a7067](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/6842a353-dfb7-4c8e-a31e-ccd0f9bb5808)
 - **/sbin**: Chứa đựng các file thực thi dạng nhị phân của các chương trình cơ bản giúp hệ thống hoạt động. Các chương trình trong **/sbin** thường được sử dụng cho mục đích là duy trì và quản trị hệ thống => dành cho người dùng admin quản trị hệ thống - người dùng root hoặc superuser.
 
 Một số chương trình trong thư mục này như: init, iptables, fdisk, ...
 
 - **/boot**: boot loader file - Chứa các tệp tin khởi động và cả nhân kernel là vmlinuz.
-
+![687474703a2f2f696d6775722e636f6d2f437261664e57532e6a7067](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/36ec18b8-1daf-474d-a475-bc6b41a9e088)
 - **/dev**: Các file thiết bị - nơi lưu trữ các phân vùng ổ cứng, thiết bị ngoại vi như usb, ổ đĩa cắm ngoài hay bất cứ thiết bị nào được gán vào hệ thống.
   - Các hard drive thường được mount tại thư mục /dev/sda , usb mount trong /dev/sde ; các phân vùng trên ổ địa được phân ra /dev/sda1, /dev/sda2...
-
+![687474703a2f2f696d6775722e636f6d2f745856787275472e6a7067](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/c6bf9333-1deb-4045-bb3e-e6e23188d944)
 - **/etc**: Chứa file cấu hình cho các chương trình hoạt động. Chúng thường là các tệp tin dạng text thường. Chức năng gần giống "Control panel" trong Windows. Các cấu hình trong /etc thường ảnh hưởng tới tất cả người dùng trong hệ thống.
 
 Trong /etc còn chứa các shell scripts dùng để khởi động hoặc tắt các chương trình khác. Ví dụ: /etc/resolve.conf, sysctl.conf, ...
-
+![687474703a2f2f696d6775722e636f6d2f667751706e67542e6a7067](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/bd4ae166-b8ea-48a3-9300-ffb9821d75e6)
 - **/home**: thư mục chứa các file cá nhân của từng user.
 - **/lib**: Chứa các file library hỗ trợ cho các file thực binary. Mỗi khi cài đặt phần mềm trên Linux, các thư viện cũng tự động được download, và chúng hầu hết được bắt đầu với lib\*.. Đây là các thư viện cơ bản mà Linux cần đề làm việc. Không giống như trong Windows, các thư viện có thể chia sẻ và dùng chung cho các chương trình khác nhau. Đó là một lợi ích trong hệ thống tệp tin của Linux.
 
