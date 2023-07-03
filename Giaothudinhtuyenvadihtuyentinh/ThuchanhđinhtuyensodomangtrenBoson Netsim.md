@@ -43,9 +43,8 @@ Router(config)#ip route <Network\_đích> <Subnet Mask của Network\_đích> <e
 
 Interface>
 
-Ví dụ ta với mô hình 
-
-sau: 
+Ví dụ ta với mô hình sau: 
+![ểt](https://github.com/xuanngo123/NhanHoa_IT/assets/97582215/9307a522-8aea-4be3-817b-168eb51bbc8b)
 
 Hình 1: Mô hình mạng sử dụng cấu hình Static
 
